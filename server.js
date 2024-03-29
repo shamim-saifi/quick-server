@@ -30,6 +30,12 @@ app.use('/api/user',UserRouter)
 app.use('/api/invoice',InvoiceRouter)
 
 
+app.get('/',(req,res)=>{
+    res.send('working')
+})
+
+
+
 app.listen(process.env.PORT,()=>{
     console.log(`server is running on port-no ${process.env.PORT}`)
 })
